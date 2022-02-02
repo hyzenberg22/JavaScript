@@ -13,6 +13,7 @@ let random_guess = Math.trunc(Math.random() * 20 + 1);
 let score = 20;
 let high_score = 0;
 
+//This functions is used for to assign the messages to the content 
 const displayMessage = function(my_message){
     document.querySelector('.message').textContent = my_message;
 }
@@ -30,7 +31,8 @@ document.querySelector('.check').addEventListener('click', function () {
     }
     //when the palyer win condition
     else if (guess_number === random_guess) {
-        document.querySelector('.message').textContent = 'Badhai Ho BDSK..!';
+        // document.querySelector('.message').textContent = 'Badhai Ho BDSK..!';
+        displayMessage('Badhai Ho BDSK..!');
         document.querySelector('.number').textContent = random_guess;
         document.querySelector('body').style.backgroundColor = 'Green';
         document.querySelector('.number').style.width = '30rem';
@@ -48,8 +50,9 @@ document.querySelector('.check').addEventListener('click', function () {
             document.querySelector('.score').textContent = score;
         } else {
             //Loosing Condition
-            document.querySelector('.message').textContent =
-                '💣 You Lost MF.....!';
+            // document.querySelector('.message').textContent =
+            //     '💣 You Lost MF.....!';
+            displayMessage('💣 You Lost MF.....!');
             document.querySelector('body').style.backgroundColor = 'red';
             document.querySelector('.number').textContent = 'GAME OVER';
             document.querySelector('.number').style.width = '30rem';
