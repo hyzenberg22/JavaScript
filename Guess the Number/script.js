@@ -52,7 +52,7 @@ document.querySelector('.check').addEventListener('click', function () {
             //Loosing Condition
             // document.querySelector('.message').textContent =
             //     '💣 You Lost MF.....!';
-            displayMessage('💣 You Lost MF.....!');
+            displayMessage('💣 You Lost MF.....!'); 
             document.querySelector('body').style.backgroundColor = 'red';
             document.querySelector('.number').textContent = 'GAME OVER';
             document.querySelector('.number').style.width = '30rem';
